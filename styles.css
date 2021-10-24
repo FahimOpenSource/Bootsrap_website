@@ -59,12 +59,11 @@ button {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  position: absolute;
-  right: 442px;
-  margin-top: 88px;
-  margin-left: 20px;
   width: 396px;
   height: 268px;
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: 20%;
 }
 
 .hero h1 {
@@ -80,17 +79,18 @@ button {
   position: absolute;
   width: 477.14px;
   height: 586px;
-  left: 187px;
   top: 170px;
-  opacity: 0.11;
+  margin-right: auto;
+  margin-left: 10%;
 }
 
 .circle_vectors {
+  z-index: -3;
   position: absolute;
-  width: 92%;
-  height: 642px;
-  left: 40px;
   top: 165px;
+  right: 55px;
+  width: 1342px;
+  height: 642px;
 }
 
 .bottom_stripes {
@@ -102,8 +102,8 @@ button {
 .lines_vector {
   z-index: -4;
   position: absolute;
-  left: 93.5px;
   top: 149.5px;
+  right: 100px;
 }
 
 .box_vector {
@@ -126,12 +126,14 @@ button {
   height: 54px;
   left: 38px;
   top: 506px;
+  display: none;
 }
 
 .box2 {
   position: absolute;
   left: 1287px;
   top: 202px;
+  display: none;
 }
 
 .box3 {
@@ -140,12 +142,13 @@ button {
   height: 54px;
   left: 417px;
   top: 756px;
+  display: none;
 }
 
 .galaxy_vector {
   z-index: -4;
   position: absolute;
-  left: 499px;
+  right: 0px;
   bottom: 0px;
 }
 /*# sourceMappingURL=styles.css.map */
