@@ -11,13 +11,7 @@ body {
 
 .container-fluid {
   height: 5rem;
-  margin-left: 5rem;
-}
-
-.navbar-nav {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-left: 5%;
 }
 
 .navbar {
@@ -33,7 +27,26 @@ body {
           justify-content: flex-end;
 }
 
-button {
+.show {
+  z-index: 4;
+}
+
+.show li:nth-child(5) {
+  display: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbtn {
+  border: 3px solid rgba(255, 255, 255, 0.671);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-left: 3rem;
+}
+
+.button {
   z-index: 4;
   border: none;
   background: #0A889A;
@@ -48,7 +61,7 @@ button {
 }
 
 .hero {
-  z-index: 4;
+  z-index: 7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +80,8 @@ button {
 }
 
 .hero h1 {
-  font-family: Montserrat;
+  text-align: left;
+  z-index: 5;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -80,7 +94,7 @@ button {
   width: 477.14px;
   height: 586px;
   top: 170px;
-  margin-right: auto;
+  right: 55%;
   margin-left: 10%;
 }
 
@@ -150,5 +164,60 @@ button {
   position: absolute;
   right: 0px;
   bottom: 0px;
+}
+
+@media (min-width: 300px) {
+  .page_vector {
+    opacity: 20%;
+  }
+  .hero {
+    margin-left: 5%;
+    width: 300px;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+  .galaxy_vector {
+    width: 430px;
+  }
+  .lines_vector {
+    width: 600px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 600px) {
+  .page_vector {
+    opacity: 30%;
+  }
+  .hero {
+    margin-left: auto;
+    width: 396px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .galaxy_vector {
+    width: 75%;
+  }
+  .lines_vector {
+    top: 15%;
+    width: 100%;
+    right: 9%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page_vector {
+    opacity: 100%;
+  }
+  .galaxy_vector {
+    width: 877px;
+  }
+  .lines_vector {
+    top: 149.5px;
+    width: 1245px;
+    right: 100px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
